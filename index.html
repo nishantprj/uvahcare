@@ -58,21 +58,30 @@
       border-radius: 20px;
       overflow: hidden;
       background-color: #2CA6A6;
-      background-image: url('../Assets/yoga1.png');
+      /* background-image: url('../Assets/yoga1.png'); */
       background-position: center center;
       background-size: cover;
       background-repeat: no-repeat;
-      padding: 45px;
 
   
     }
+
+    .heroimage{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
     .herotextcontainer{
+      z-index: 1;
       display: flex;
       width: 100%;
       max-width: 1100px;
       justify-content: flex-start;
       align-items: center;
       height: 100%;
+      padding: 20px;
     }
 
     .herotext{
@@ -143,9 +152,7 @@
     .hero1{
       padding: 35px 15px;
     }
-    .hero1absolute{
-      padding: 20px;
-    }
+    
     .herotext h1{
       font-size: 48px
     }
@@ -159,9 +166,9 @@
   }
 
     @media (max-width:500px){
-      .hero1absolute{
+      /* .hero1absolute{
       background-image: url('../Assets/yoga3.png');
-      }
+      } */
         .buttonmob{
         display:flex;
     }
@@ -226,7 +233,9 @@
 <div class="restbody">
   <div class="hero1">
     <div class="hero1absolute">
+      <img src="./Assets/yoga1.png" class="heroimage" alt="">
       <div class="herotextcontainer">
+        
         <div class="herotext">
           <h1>Prescription for Wellness</h1>
           <h5>Where remedies meet community, UvahCare revolutionizes healthcare.</h5>
