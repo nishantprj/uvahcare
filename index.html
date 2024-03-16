@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        font-family: 'inter';
+    }
+    .buttonmob{
+        display:none;
+    }
+    .buttondesktop{
+        display: flex;
+        height: 40px;
+        padding: 10px 21px;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+        border-radius: 56px;
+        background-color: #2CA6A6;
+        color: #000;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    .buttondesktop:hover {
+        scale: 1.1;
+    }
+
+    .navheader{
+      background: rgba(255, 255, 255, 0.65);
+      backdrop-filter: blur(15px);
+      border-bottom: 1px solid #d3d3d3;
+      
+    }
+
+    .hero1{
+      padding: 35px;
+    }
+    .hero1absolute{
+      display: flex;
+      justify-content: center;
+      position: relative;
+      width: 100%;
+      height: 700px;
+      margin: 0 auto;
+      border-radius: 20px;
+      overflow: hidden;
+      background-color: #2CA6A6;
+      background-image: url('assets/yoga1.png');
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 45px;
+
+  
+    }
+    .herotextcontainer{
+      display: flex;
+      width: 100%;
+      max-width: 1100px;
+      justify-content: flex-start;
+      align-items: center;
+      height: 100%;
+    }
+
+    .herotext{
+      width: 100%;
+      max-width: 450px;
+    }
+
+    .herotext h1{
+      font-size: 70px;
+      color: #000000;
+      line-height: 1.2;
+      padding-bottom: 15px;
+    }
+    .herotext h5{
+      font-size: 20px;
+      color: #000000;
+      padding-bottom: 25px;
+    }
+
+    .buttonhero{
+      width: max-content;
+        display: flex;
+        height: 40px;
+        padding: 10px 21px;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+        border-radius: 56px;
+        background-color: #2CA6A6;
+        color: #000;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .buttonhero:hover {
+        scale: 1.1;
+    }
+
+    .section1{
+      padding: 15px 40px;
+    }
+
+    .section1 .textcontainer{
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .section1 .textcontainer h1{
+      font-size: 36px;text-align: center;
+      line-height: 1.1;
+    }
+    .active{
+      border-bottom: 1px solid #d3d3d3;
+    }
+    
+
+    
+    @media (max-width:765px){
+      .flexcon{
+      display: flex;
+      flex-direction: column;
+    }
+    .hero1{
+      padding: 35px 15px;
+    }
+    .hero1absolute{
+      padding: 20px;
+    }
+    .herotext h1{
+      font-size: 48px
+    }
+    .herotext h5{
+      font-size: 18px;
+    }
+    .hero1absolute{
+      
+      height: 600px;
+    }
+  }
+
+
+
+
+
+
+    @media (max-width:500px){
+      .hero1absolute{
+      background-image: url('assets/yoga3.png');
+      }
+        .buttonmob{
+        display:flex;
+    }
+    .buttondesktop{
+        display: none;
+    }
+    .herotext h1{
+      font-size: 36px
+    }
+    .herotext h5{
+      font-size: 16px;
+    }
+    
+    }
+</style>
+
+<body>
+    
+
+<nav class="navheader fixed w-full z-20 top-0 start-0" id="nav">
+    <div class="md:px-[35px] flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="Assets/logo.svg" class="h-8" alt="Flowbite Logo">
+    </a>
+    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+        <a class="buttondesktop text-white" href="https://play.google.com/store/apps/details?id=com.innovation.socialmedia&pcampaignid=web_share" target="_blank">
+            <span>Download</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="24" viewBox="0 0 27 24" fill="none">
+                <path d="M6.75 20H20.25M13.5 5.33334V16.3333M13.5 16.3333L17.4375 13.125M13.5 16.3333L9.5625 13.125" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+        
+        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+        </button>
+    </div>
+    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+      
+      <button type="button" class="buttonmob mt-4 mb-3 w-full text-white font-medium rounded-lg text-sm px-4 py-[10px] text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get started</button>
+      <ul class="flexcon flex gap-[10px]">
+        <li>
+          <a href="#" class="block py-2 px-3 text-dark text-[16px]">Home</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-dark text-[16px]">About</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-dark text-[16px]">Services</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-dark text-[16px]">Contact</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+</nav>
+
+<div class="py-9"></div>
+<div class="restbody">
+  <div class="hero1">
+    <div class="hero1absolute">
+      <div class="herotextcontainer">
+        <div class="herotext">
+          <h1>Prescription for Wellness</h1>
+          <h5>Where remedies meet community, UvahCare revolutionizes healthcare.</h5>
+          <a class="buttonhero text-white" href="https://play.google.com/store/apps/details?id=com.innovation.socialmedia&pcampaignid=web_share" target="_blank">
+            <span>Download</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="24" viewBox="0 0 27 24" fill="none">
+              <path d="M6.75 20H20.25M13.5 5.33334V16.3333M13.5 16.3333L17.4375 13.125M13.5 16.3333L9.5625 13.125"
+                stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section1 w-full">
+    <div class="textcontainer">
+      <h1>"Empowering individuals through the democratization of awareness in the traditional system of medicines, particularly AYUSH (Ayurveda, Yoga & Naturopathy, Unani, Siddha, and Homeopathy), fostering a holistic approach to health and well-being for all."</h1>
+    </div>
+  </div>
+</div>
+    
+    
+    
+    
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+</script>
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("navheader").style.borderBotton = "1px solid #d3d3d3";
+      } else {
+        document.getElementById("navheader").style.borderBotton = "2px solid #d3d3d3";
+      }
+    }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+</html>
