@@ -31,7 +31,7 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        transition: 0.3s;
+        transition: 0.2s;
         cursor: pointer;
     }
     .buttondesktop:hover {
@@ -62,8 +62,6 @@
       background-position: center center;
       background-size: cover;
       background-repeat: no-repeat;
-
-  
     }
 
     .heroimage{
@@ -87,6 +85,7 @@
     .herotext{
       width: 100%;
       max-width: 450px;
+      padding-top: 80px;
     }
 
     .herotext h1{
@@ -116,7 +115,7 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        transition: 0.3s;
+        transition: 0.2s;
         cursor: pointer;
     }
 
@@ -141,6 +140,32 @@
     .active{
       border-bottom: 1px solid #d3d3d3;
     }
+
+    .navitem{
+      color: black;
+    }
+    .navitem:hover{
+      color: #2CA6A6;
+    }
+
+    .reviews{
+      width: 100%;
+      height: 260px;
+    }
+    .reviews img{
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+    }
+
+    .showondesktop{
+      display: flex;
+    }
+
+
+    .hideondesktop{
+      display: none;
+    }
     
 
     
@@ -152,7 +177,9 @@
     .hero1{
       padding: 35px 15px;
     }
-    
+    .herotext{
+      padding-top: 180px
+    }
     .herotext h1{
       font-size: 48px
     }
@@ -172,6 +199,12 @@
         .buttonmob{
         display:flex;
     }
+    .showondesktop{
+      display: none;
+    }
+    .hideondesktop{
+      display: flex;
+    }
     .buttondesktop{
         display: none;
     }
@@ -190,7 +223,7 @@
 
 <nav class="navheader fixed w-full z-20 top-0 start-0" id="nav">
     <div class="md:px-[35px] flex flex-wrap items-center justify-between mx-auto p-4">
-    <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+    <a href="/index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
         <img src="Assets/logo.svg" class="h-8" alt="Flowbite Logo">
     </a>
     <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
@@ -213,16 +246,16 @@
       <button type="button" class="buttonmob mt-4 mb-3 w-full text-white font-medium rounded-lg text-sm px-4 py-[10px] text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get started</button>
       <ul class="flexcon flex gap-[10px]">
         <li>
-          <a href="#" class="block py-2 px-3 text-dark text-[16px]">Home</a>
+          <a href="#" class="navitem block py-2 px-3 text-dark text-[16px]">Home</a>
         </li>
         <li>
-          <a href="#" class="block py-2 px-3 text-dark text-[16px]">About</a>
+          <a href="#" class="navitem block py-2 px-3 text-dark text-[16px]">About</a>
         </li>
         <li>
-          <a href="#" class="block py-2 px-3 text-dark text-[16px]">Services</a>
+          <a href="#" class="navitem block py-2 px-3 text-dark text-[16px]">Services</a>
         </li>
         <li>
-          <a href="#" class="block py-2 px-3 text-dark text-[16px]">Contact</a>
+          <a href="#" class="navitem block py-2 px-3 text-dark text-[16px]">Contact</a>
         </li>
       </ul>
     </div>
@@ -233,7 +266,7 @@
 <div class="restbody">
   <div class="hero1">
     <div class="hero1absolute">
-      <img src="./Assets/yoga1.png" class="heroimage" alt="">
+      <img src="./Assets/yoga4.png" class="heroimage" alt="">
       <div class="herotextcontainer">
         
         <div class="herotext">
@@ -251,11 +284,28 @@
     </div>
   </div>
 
+
+  <div class="reviews">
+    <img class="showondesktop" src="./Assets/reviews1.svg" alt="Uvahcare reviews">
+    <img class="hideondesktop" src="./Assets/reviews1_2.svg" alt="Uvahcare reviews">
+  </div>
+
   <div class="section1 w-full">
     <div class="textcontainer">
       <h1>"Empowering individuals through the democratization of awareness in the traditional system of medicines, particularly AYUSH (Ayurveda, Yoga & Naturopathy, Unani, Siddha, and Homeopathy), fostering a holistic approach to health and well-being for all."</h1>
     </div>
   </div>
+
+
+
+
+
+
+
+
+
+
+
 </div>
     
     
