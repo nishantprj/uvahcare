@@ -8,7 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link rel="icon" type="image/png" href="./Assets/fav.svg">
+    <meta name="title" content="UvahCare Prescription for Wellness">
+    <meta name="description" content="Empowering individuals through the democratization of awareness in the traditional system of medicines, particularly AYUSH (Ayurveda, Yoga & Naturopathy, Unani, Siddha, and Homeopathy), fostering a holistic approach to health and well-being for all.">
+    <meta property="og:title" content="UvahCare Prescription for Wellness">
+    <meta property="og:description" content="Empowering individuals through the democratization of awareness in the traditional system of medicines, particularly AYUSH (Ayurveda, Yoga & Naturopathy, Unani, Siddha, and Homeopathy), fostering a holistic approach to health and well-being for all.">
+    <title>UvahCare Prescription for Wellness</title>
+    
 </head>
 <style>
     *{
@@ -166,10 +172,127 @@
     .hideondesktop{
       display: none;
     }
+
+    .section2{
+      padding: 0 35px;
+      display: flex;
+      width: 100%;
+      max-width: 1100px;
+      height: auto;
+      align-items: center;
+      margin: 0 auto;
+    }
+
+    .section2text{
+      width: 100%;
+      text-align: left;
+
+    }
+
+    .section2text h1{
+      font-size: 55px;
+      line-height: 1.1;
+      padding-bottom: 20px;
+    }
+
+    .section2text h5{
+      font-size: 16px;
+    }
+    .section2img{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .section2img img{
+      width: 100%;
+      max-width: 260px;
+      height: auto;
+      border-radius: 22px;
+      box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.10);
+      
+    }
+
+
+    .section3{
+      padding: 0 35px;
+      display: flex;
+      width: 100%;
+      max-width: 1100px;
+      height: auto;
+      align-items: center;
+      margin: 0 auto;
+    }
+
+    .section3text{
+      width: 100%;
+      text-align: left;
+
+    }
+
+    .section3text h1{
+      font-size: 55px;
+      line-height: 1.1;
+      padding-bottom: 20px;
+    }
+
+    .section3text h5{
+      font-size: 16px;
+    }
+    .section3img{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .section3img img{
+      width: 100%;
+      max-width: 310px;
+      height: auto;
+      border-radius: 22px;
+      
+    }
+
     
 
     
+
+
+
+    
     @media (max-width:765px){
+      .section1{
+      padding: 15px 20px;
+    }
+    .section2{
+      padding: 0 15px;
+      flex-direction: column;
+      gap: 40px;
+    }
+    .section3{
+      padding: 0 15px;
+      flex-direction: column;
+      gap: 40px;
+    }
+    .section2text h1{
+      font-size: 32px;
+      line-height: 1.1;
+      padding-bottom: 20px;
+    }
+    .section3text h1{
+      font-size: 32px;
+      line-height: 1.1;
+      padding-bottom: 20px;
+    }
+    .section2img img{
+      max-width: 230px;
+    }
+    .section3img img{
+      max-width: 230px;
+    }
+    
       .flexcon{
       display: flex;
       flex-direction: column;
@@ -190,12 +313,20 @@
       
       height: 600px;
     }
+    .section1 .textcontainer h1{
+      font-size: 26px;text-align: center;
+      line-height: 1.1;
+    }
   }
 
     @media (max-width:500px){
       /* .hero1absolute{
       background-image: url('../Assets/yoga3.png');
       } */
+      .section1 .textcontainer h1{
+      font-size: 24px;text-align: center;
+      line-height: 1.1;
+    }
         .buttonmob{
         display:flex;
     }
@@ -266,7 +397,7 @@
 <div class="restbody">
   <div class="hero1">
     <div class="hero1absolute">
-      <img src="./Assets/yoga4.png" class="heroimage" alt="">
+      <img src="./Assets/yoga4.png" class="heroimage" alt="UvahCare">
       <div class="herotextcontainer">
         
         <div class="herotext">
@@ -286,14 +417,44 @@
 
 
   <div class="reviews">
-    <img class="showondesktop" src="./Assets/reviews1.svg" alt="Uvahcare reviews">
-    <img class="hideondesktop" src="./Assets/reviews1_2.svg" alt="Uvahcare reviews">
+    <img class="showondesktop" src="./Assets/reviews1.svg" alt="UvahCare reviews">
+    <img class="hideondesktop" src="./Assets/reviews1_2.svg" alt="UvahCare reviews">
   </div>
 
-  <div class="section1 w-full">
+  <div class="sectiongap40" style="padding-top: 40px;"></div>
+
+  <!-- <div class="section1 w-full">
     <div class="textcontainer">
       <h1>"Empowering individuals through the democratization of awareness in the traditional system of medicines, particularly AYUSH (Ayurveda, Yoga & Naturopathy, Unani, Siddha, and Homeopathy), fostering a holistic approach to health and well-being for all."</h1>
     </div>
+  </div> -->
+
+  <div class="sectiongap40" style="padding-top: 40px;"></div>
+
+  <div class="section2 w-full">
+    <div class="section2text">
+      <h1>Where remedies meet community</h1>
+      <h5>Empowering individuals through the democratization of awareness in the traditional system of medicines, particularly AYUSH</h5>
+    </div>
+    <div class="section2img">
+      <img src="./Assets/androidscree1.svg" alt="UvahCare">
+    </div>
+  </div>
+
+  <div class="sectiongap100" style="padding-top: 100px;"></div>
+
+  <div class="sectionwrapper w-full" style="background-color: #131B20;">
+    <div class="sectiongap80" style="padding-top: 80px;"></div>
+    <div class="section3 w-full">
+      <div class="section3text order-2">
+        <h1 style="color: #ffffff;">Where remedies meet <span style="color: #2CA6A6;">community</span></h1>
+        <h5 style="color: #ffffff;">Empowering individuals through the democratization of awareness in the traditional system of medicines, particularly AYUSH</h5>
+      </div>
+      <div class="section3img order-1">
+        <img src="./Assets/androidscree2.svg" alt="UvahCare">
+      </div>
+    </div>
+    <div class="sectiongap80" style="padding-top: 80px;"></div>
   </div>
 
 
